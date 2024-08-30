@@ -1,0 +1,265 @@
+ /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Fonts */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.7;
+    color: #eee;
+    background-color: #1e1e1e;
+    padding: 0;
+}
+
+
+/* Header Styles */
+/* Header Styles */
+header {
+    background:#2a2a2a;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 3em;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    background: #c5b3f2;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 1.2em;
+    position: relative;
+    z-index: 1;
+}
+
+/* Card Component */
+.desc-card {
+    background: linear-gradient(135deg, #ff8a00, #e52e71);
+    color: #333;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(219, 70, 11, 0.89);
+    text-align: left;
+}
+
+.desc-card h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.desc-card p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+
+/* Main Section Styles */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #2a2a2a;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    border-bottom: 3px solid #c5b3f2;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: 600;
+    color: #c5b3f2;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background:linear-gradient(135deg, #ff8a00, #e52e71);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+section h2:hover::after {
+    transform: scaleX(1);
+}
+
+/* List Styles */
+ul {
+    list-style: none;
+}
+
+ul li {
+    padding: 12px 0;
+    border-bottom: 1px solid #444;
+    color: #ccc;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+/* Form Styles */
+form {
+    display: grid;
+    gap: 15px;
+}
+
+label {
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #c5b3f2;
+    box-shadow: 0 0 5px #c5b3f2;
+}
+
+/* Button Styles */
+button {
+    background: #6a0dad;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: #8c2d91;
+    transform: translateY(-2px);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background: #2a2a2a;
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#skills ul li{
+border: 2px solid plum;
+text-align: center;
+margin-bottom: 1vw;
+border-radius: 3vw;
+font-weight: 800;
+font-family: 'Courier New', Courier, monospace;
+&&:hover{
+    background: linear-gradient(135deg, #6a0dad, #2c36c4);
+    transform: scale(1.05);
+    font-size: larger;
+}
+}
+.mail{
+    text-decoration: none;
+    color: #c5b3f2;
+    border: 2px solid paleturquoise;
+    padding: .5vw;
+    border-radius: 2vw;
+    height: auto;
+    width: auto;
+    &&:hover{
+        background: linear-gradient(135deg, #ff8a00, #e52e71);
+    }
+}
+.desc{
+    font-family:'Courier New', Courier, monospace;
+}
+
+/* SECTION 2: Skills */
+.skills-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+  }
+  
+  .skills-section h2 {
+    text-align: center;
+    font-size: 35px;
+  }
+  
+  .skills-section .text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .skills-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .skills-section .cells .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 5px;
+  }
+  
+  .skills-section .cells .cell img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+  }
+  
+  .skills-section .cells .cell span {
+    font-size: 18px;
+  }
+
+  .skills-section .cell:hover{
+    background: linear-gradient(135deg, #ff8a00, #e52e71);
+  }
